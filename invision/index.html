@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>Invision:Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function() {
+			$(".menuicon").click(function() {
+   			 $(".menudown").css('display', ($(".menudown").css('display') == 'block') ? 'none' : 'block');
+   			 $(".logout").css('display', ($(".logout").css('display') == 'block') ? 'none' : 'block');
+   			 $(".layer2down").css('display', ($(".menudown").css('display') == 'block') ? 'none' : 'block');
+   			 $(".settings").css('display', ($(".settings").css('display') == 'block') ? 'none' : 'block');
+   			 $(".menuicon").css('width', ($(".menuicon").css('width') == '33%') ? '50%' : '33%');
+   			 $(".settingsicon").css('width', ($(".settingsicon").css('width') == '33%') ? '50%' : '33%');
+   			 $(".settingsicon").css('float', ($(".settingsicon").css('float') == 'left') ? 'right' : 'left');
+   			 $(".header").toggleClass("black");
+   			 $(".menuicon1").toggle();
+   			 $(".settingsicon1").toggle();
+   			 $(".cross").toggle();
+   			 $(".nut").toggle();
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="page">
+	<div class="header">	
+		<div class="menuicon">
+		<img src="images/menuicon.png" class="menuicon1">
+		<img src="images/cross.png" class="cross">
+		</div>
+		<div class="settings">Settings</div>
+		<div class="settingsicon">
+		<img src="images/settingsicon.png" class="settingsicon1">
+		<img src="images/nut2.png" class="nut">
+		</div>
+	</div>
+	<div class="layer2down">
+		<div class="main">
+		  <div class="uppermain">
+			<img src="images/dp.png">
+			<div class="uppermain1">
+				<span>UPDATE PHOTO</span>
+			</div>
+			<div class="detail">
+			<div class="fields">
+			<input type="text" name="name" required/>
+			<span class="floating">NAME</span><br>
+			</div>
+			<div class="fields">
+			<input type="email" name="email" required/>
+			<span class="floating">EMAIL</span><br>
+			</div>
+			<div class="fields">
+			<input type="password" name="password" required/>
+			<span class="floating">PASSWORD</span><br>
+			</div>
+			</div>
+		  </div>
+		  <div class="lowermain">
+		    <div class="notab">
+		 	<span>Push Notifications</span>
+		  	<label class="switch">
+			  <input type="checkbox">
+			  <div class="slider round"></div>
+			</label>
+		    </div>
+		    <div class="notab">
+		  	<span>Email Notifications</span>
+		  	<label class="switch">
+			  <input type="checkbox">
+			  <div class="slider round"></div>
+			</label>
+			</div>
+		    <div class="notab">
+		  	<span>Notification Sound</span>
+		  	<label class="switch">
+			  <input type="checkbox">
+			  <div class="slider round"></div>
+			</label>
+			</div>
+		  </div>  
+		</div>
+	</div>
+	   <div class="menudown">
+			<div class="Home">Home</div>
+			<div class="Profile">Profile</div>
+			<div class="Compose">Compose</div>
+			<div class="Gallery">Gallery</div>
+			<div class="Capture">Capture</div>
+			<div class="Stats">Stats</div>
+		</div>
+		<div style="clear: both; "></div>
+		<div class="logout">
+			<div class="handle">Logout<br><span>Sumit</span></div>
+			<div class="dp"><img src="images/dp.png"></div>
+			<div style="clear: both; "></div>
+		</div>
+</div>
+<div class="too_small">Resolution very LOW</div>
+</body>
+</html>
