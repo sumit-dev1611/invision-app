@@ -1,0 +1,162 @@
+body{
+	margin: 0 auto;
+	max-width: 100%;
+	background-image: url("images/back.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Karla, sans-serif;
+	font-weight: 400;
+
+}
+
+.page{
+	background-color: rgba(1,160,254,0.7);
+}	
+.header{
+	height: 100px;
+	padding: 50px 30px 0 30px;
+}
+.menuicon{
+	width: 50%;
+	float: left;
+}
+.menuicon img{
+	padding-left: 30px;
+    margin: 20px auto;
+}
+
+.settingsicon{
+	width: 50%;
+	float: left;
+}
+.settingsicon img{
+	float: right;
+    padding-right: 30px;
+    margin: 20px auto;
+}
+.layer2down div{
+	font-family : Karla, sans-serif;
+	margin: 0 auto;
+    width: 60%;
+    font-size: 80px;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+
+}
+.layer2down div:hover{
+	color: #efbbba;
+}
+.layer2down{
+	padding-top:  30px;
+	padding-bottom: 50px;
+}
+.logout{
+	background-color: #000;
+	position: relative;
+	bottom: 0;
+}
+.logout img{
+	height: 200px;
+	width: 200px;
+	float: right;
+}
+.dp{
+	float: right;
+}
+.handle{
+	float: left;
+	font-size: 50px;
+	color: #FFF;
+	padding: 50px;
+	margin-left: 20px;
+}
+.handle span{
+	font-size: 30px;
+	color: #815f5d;
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px)
+{
+.layer2down div{
+	font-size: 60px;
+}
+.logout img{
+	height: 150px;
+	width: 150px;
+	float: right;
+}
+.handle{
+	padding:30px;
+}
+}
+@media screen and (max-width: 500px) and (min-width: 350px){
+.layer2down div{
+	font-size: 40px;
+}
+.logout img{
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+.handle{
+	padding:15px;
+	font-size: 30px;
+}
+.handle span{
+	font-size: 20px;
+}
+
+.menuicon img{
+	height:30px;
+	width:30px;
+}
+.settingsicon img{
+	height:30px;
+	width:30px;
+
+}
+.header{
+	height: 80px;
+	padding: 40px 20px 0 20px;
+}
+}
+@media screen and (min-height: 1220px){
+	.page{
+		height: 100%;
+	}
+	.layer2down{
+		height: 70%;
+	}
+}la
+@media screen and (max-width: 350px) and (min-width: 200px){
+.layer2down div{
+	font-size: 25px;
+}
+.menuicon img{
+	height:20px;
+	width:20px;
+}
+.settingsicon img{
+	height:20px;
+	width:20px;
+
+}
+.logout img{
+	height: 50px;
+	width: 50px;
+	float: right;
+}
+.handle{
+	padding:10px;
+	font-size: 15px;
+}
+.handle span{
+	font-size: 10px;
+}
+.header{
+	height: 60px;
+	padding: 30px 15px 0 15px;
+}
+}
