@@ -3,17 +3,16 @@ body{
 	max-width: 100%;
 	font-family: Karla, sans-serif;
 	font-weight: 400;
-	height: 200%;
+	overflow: scroll;
 }
 .too_small{
 	display: none;
 }
 .page{
 	background-image:url("images/lscape.png"),url("images/BottomBox1.png");
-	background-size: 100% 40%,cover;
-    background-position-y:0,245px;
+	background-size: 100% 30%,cover;
+    background-position-y:30px,225px;
     background-repeat: no-repeat,no-repeat;
-    height: 100%;
 }
 .header{
 	background-color: black;
@@ -21,7 +20,7 @@ body{
 }
 .headercontent{
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 85%;
 	padding-top: 35px;
 	text-align: center;
 }
@@ -36,14 +35,14 @@ body{
 .signup{
 	padding: 30px 0 30px 0;
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 85%;
 	font-size: 40px;
 	color: #FFF;
 	font-weight: 600;
 }
 .infodiv{
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 85%;
 	background-color: #FFF;
 }
 .info{
@@ -95,7 +94,7 @@ input:not(:focus):valid ~ .floating{
 }
 .nextstep{
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 85%;
 	background-color:rgb(1,160,254);
 }
 .innerdiv{
@@ -120,10 +119,27 @@ input:not(:focus):valid ~ .floating{
 	color: #FFF;
 	opacity: .3;
 }
+ @media screen and (min-width: 800px){
+  
+.page{
+	background-size: 100% 60%,cover;
+}
+.signup{
+	padding: 80px 0 80px 0;
+	font-size: 60px;
+}
+}
+ @media screen and (min-width: 600px) and (max-width: 800px){
+  
+.page{
+	background-size: 100% 50%,cover;
+}
+.signup{
+	padding: 65px 0 65px 0;
+	font-size: 60px;
+}
+}
 @media screen and (min-height: 410px){
-	body{
-		height: 120%;
-	}
 	.signup{
 	padding: 50px 0 50px 0;
 		
@@ -134,34 +150,8 @@ input:not(:focus):valid ~ .floating{
 	padding-bottom: 40px;
 }
 }
-@media screen and (width: 320px) and (height:568px){
-	
-	body{
-		height: 135%;
-	}
- }
- @media screen and (width: 412px) and (height: 732px){
-	
-	body{
-		height: 105%;
-	}
- }
- @media screen and (width: 375px) and (height: 667px){
-	
-	body{
-		height: 115%;
-	}
- }
- @media screen and (width: 414px) and (height: 736px){
-	
-	body{
-		height: 105%;
-	}
- }
  @media screen and (min-height: 1024px){
- 	body{
- 		height:100%;
- 	}
+ 
  	.signup{
 	padding: 100px 0 100px 0;
 	font-size: 90px;
@@ -177,11 +167,6 @@ input:not(:focus):valid ~ .floating{
 }
 }
 @media screen and (min-height: 1366px){
-	
-	body{
-		height: 100%;
-	}
-
  	.signup{
 	padding: 150px 0 150px 0;
 	font-size: 100px;
@@ -218,5 +203,4 @@ body{
 	display: block;
 	font-size: 40px;
 }
-
-  }
+}
